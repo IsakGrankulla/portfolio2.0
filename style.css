@@ -7,7 +7,7 @@
     font-size: 70px;
     font-family: 'Bungee', cursive;
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     text-align: center;
     transition: 0.5s;
     margin-top: 10%;
@@ -22,7 +22,7 @@
     font-size: 40px;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
-    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
 
@@ -44,13 +44,39 @@ body {
 
 .footer-text {
     color: black;
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-family: 
 }
 
 .footer {
     background-color: rgb(230, 230, 230);
-    
+    height: 170px;
+}
+
+.card {
+    box-shadow: 6px 6px 20px black;
+    transition: 1s;
+}
+
+#skit {
+    color: rgb(0, 0, 0);
+}
+
+#navbaritem:hover {
+    color: blue;
+    transition: 0.5s
+}
+
+#navbaritem {
+    transition: 0.5s;
+    font-size: 17px;
+}
+
+.card:hover {
+    height: 455px;
+    transition: 1s;
+    background-color: rgb(255, 0, 0);
+    color: white;
 }
 
 .ig {
@@ -60,7 +86,6 @@ body {
 }
 
 .ig:hover {
-    
 }
 
 .git {
