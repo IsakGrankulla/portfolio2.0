@@ -1,0 +1,128 @@
+.first-text {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.second-text {
+    font-size: 70px;
+    font-family: 'Bungee', cursive;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-align: center;
+    transition: 0.5s;
+    margin-top: 10%;
+}
+
+.second-text:hover {
+    font-size: 75px;
+    transition: 0.5s;
+}
+
+.third-text {
+    font-size: 40px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: rgb(199, 202, 202);
+    background-image: url(sky.jpg);
+  }
+
+.body1 {
+    height: 1450px;
+}
+
+#wrapper {
+    flex: 1;
+}
+
+.footer-text {
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer {
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.ig {
+    height: 150px;
+    padding-right: 250px;
+    margin-top: 5%;
+}
+
+.ig:hover {
+    
+}
+
+.git {
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+.contact-bg {
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: 600px;
+    display: inline-block;
+    margin-top: 9%;
+    box-shadow: black 6px 6px 20px;
+}
+
+.behind {
+    text-align: center;
+}
+
+.modal {
+    background-color: black;
+    height: 400px;
+    width: 400px;
+    margin-top: 30%;
+}
+
+#email-button {
+    font-size: 50px;
+    background-color: white;
+    border: black solid 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#email-button:hover {
+    background-color: rgb(185, 184, 184);
+    color: black;
+}
+
+#show-email {
+    font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 35px;
+}
+
+#copy-button {
+    font-size: 25px;
+    background-color: white;
+    border: black solid 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Courier New', Courier, monospace, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+@media screen and (max-width: 768px) {
+    .second-text {
+        font-size: 50px;
+    }
+    .second-text:hover {
+        font-size: 52px;
+    }
+}
