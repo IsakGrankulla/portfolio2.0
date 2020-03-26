@@ -18,14 +18,14 @@
                 <h1 class="first-text">Isak Grankulla</h1>
 
             </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
         </div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
                 <a id="navbaritem" class="navbar-item" href="index.html">
                     Home
@@ -33,7 +33,7 @@
                 <a id="navbaritem" class="navbar-item" href="cards.html">
                     Projects
                 </a>
-                <a id="navbaritem" class="navbar-item" href="#">
+                <a id="navbaritem" class="navbar-item" href="contact.html">
                     Contact
                 </a>
             </div>
@@ -51,11 +51,13 @@
     </nav>
 
 
+    <h1 class="second-text">Contact</h1>
+
     <div class="behind">
         <div class="contact-bg">
             <div class="medias">
-               <a href="https://www.instagram.com/isakgrankulla/"> <img class="ig" src="instagram.png" alt=""></a>
-                <a href="https://github.com/IsakGrankulla"> <img class="git" src="github.png" alt=""></a>
+               <a href="https://www.instagram.com/isakgrankulla/" target="_blank"> <img class="ig" src="instagram.png" alt=""></a>
+                <a href="https://github.com/IsakGrankulla" target="_blank"> <img class="git" src="github.png" alt=""></a>
             </div>
             <button id="email-button">Email</button>
 
@@ -71,6 +73,17 @@
 
 
     <script src="script.js"></script>
+    <script>$(document).ready(function () {
+
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function () {
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+
+        });
+    });</script>  
 </body>
 
 </html>

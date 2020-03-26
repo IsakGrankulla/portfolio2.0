@@ -18,14 +18,14 @@
                 <h1 class="first-text">Isak Grankulla</h1>
 
             </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
         </div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
                 <a id="navbaritem" class="navbar-item" href="index.html">
                     Home
@@ -50,6 +50,7 @@
         </div>
     </nav>
 
+    <h1 class="second-text">Projects</h1>
 
     <section id="cards" class="section">
         <div class="container">
@@ -64,7 +65,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <figure class="image is-3by2">
-                                               <a href="https://isakgrankulla.github.io/CPS/"> <img src="project1.PNG" alt="Placeholder image"></a>
+                                               <a href="https://isakgrankulla.github.io/CPS/" target="_blank"> <img src="project1.PNG" alt="Placeholder image"></a>
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -93,7 +94,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <figure class="image is-3by2">
-                                                <a href="https://isakgrankulla.github.io/CrosswordGame/"> <img src="cross.JPG" alt="Placeholder image"> </a>
+                                                <a href="https://isakgrankulla.github.io/CrosswordGame/" target="_blank"> <img src="cross.JPG" alt="Placeholder image"> </a>
                                             </figure>
                                         </div>
                                         <div class="card-content">
@@ -122,7 +123,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <figure class="image is-3by2">
-                                                <a href="https://isakgrankulla.github.io/Guess-The-Number/"> <img src="guess.JPG" 
+                                                <a href="https://isakgrankulla.github.io/Guess-The-Number/" target="_blank"> <img src="guess.JPG" 
                                                     alt="Placeholder image"></a>
                                             </figure>
                                         </div>
@@ -151,8 +152,17 @@
                         </div>
                     </section>
 
+                    <script>$(document).ready(function () {
 
-
+                        // Check for click events on the navbar burger icon
+                        $(".navbar-burger").click(function () {
+                
+                            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                            $(".navbar-burger").toggleClass("is-active");
+                            $(".navbar-menu").toggleClass("is-active");
+                
+                        });
+                    });</script>  
 
 </body>
 

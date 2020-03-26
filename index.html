@@ -18,16 +18,16 @@
                 <h1 class="first-text">Isak Grankulla</h1>
 
             </a>
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
         </div>
 
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-start">
-                <a id="navbaritem" class="navbar-item" href="#home">
+                <a id="navbaritem" class="navbar-item" href="index.html">
                     Home
                 </a>
                 <a id="navbaritem" class="navbar-item" href="cards.html">
@@ -80,24 +80,24 @@
 
             <p class="footer-text">
                 Website designed my Isak <br>
-                Powered by Bulma
+                Powered by <a class="bulma-link" href="https://bulma.io/" target="_blank">Bulma</a>
             </p>
 
         </div>
     </footer>
 
 
-    <script src="script.js">$(document).ready(function () {
+    <script>$(document).ready(function () {
 
-            // Check for click events on the navbar burger icon
-            $(".navbar-burger").click(function () {
+        // Check for click events on the navbar burger icon
+        $(".navbar-burger").click(function () {
 
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                $(".navbar-burger").toggleClass("is-active");
-                $(".navbar-menu").toggleClass("is-active");
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
 
-            });
-        });</script>
+        });
+    });</script>
 
 </body>
 
