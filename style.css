@@ -56,6 +56,7 @@ body {
 .card {
     box-shadow: 6px 6px 20px black;
     transition: 1s;
+    background-color: rgb(214, 214, 213);
 }
 
 #cps {
@@ -74,10 +75,12 @@ body {
 
 .card:hover {
     height: 455px;
-    transition: 1s;
-    background-color: rgb(255, 0, 0);
+    transition: 0.5s;
+    background-color: rgb(71, 149, 250);
     color: white;
 }
+
+
 
 .ig {
     height: 150px;
